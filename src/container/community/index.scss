@@ -1,0 +1,104 @@
+.page {
+	padding: 24px;
+	max-width: 480px;
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.button {
+	transition: opacity 0.7s;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.change {
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+.change__title {
+	color:  #121212;
+	font-size: 16px;
+	font-weight: 500;
+
+	padding-bottom: 12px;
+	border-bottom: 2px solid #121212;
+	transition: opacity 0.7s;
+
+	&:hover {
+		opacity: 0.7;
+		cursor: pointer;
+	}
+
+}
+
+.title--unactive {
+	color: #888;
+	border-bottom: 2px solid #E6E6E6;
+}
+
+.main__content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.info__block {
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+.info__title {
+	font-size: 18px;
+	color: #121212;
+	font-weight: 500;
+}
+
+.info {
+	color:  #363636;
+	font-size: 14px;
+	line-height: 150%; /* 21px */
+}
+
+.submit__button {
+padding: 16px;
+border-radius: 10px;
+background: #F46F17;
+}
+
+em {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.divider {
+	border: 2px solid #121212;
+	display: flex;
+	justify-self: flex-start;
+	align-self: stretch;
+}
+
+.divider--sleeps {
+	 border: 2px solid #E6E6E6;
+}
