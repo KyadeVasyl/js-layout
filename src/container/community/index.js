@@ -24,7 +24,7 @@ const CHANGE_LIST = [
 
 
 const MAIN_INFO = {
-    img: '/img/community_img.png',
+    img: '/img/welcome.png',
     title: 'Що таке база знань?',
     text: 'База знаний — база даних, що містить правила виводу та інформацію про людський досвід і знання в певній предметній області. В самоосвітніх системах база знань також містить інформацію, яка є результатом вирішення попередніх завдань.',
     button: `Перейти до ком'юніті у Телеграм`,
@@ -37,8 +37,8 @@ const joinCommunity = () => {
     const change = createElement('div', 'change')
 
 
-    const changeItem = CHANGE_LIST.forEach((elem) => {
-        createElement(
+    const changeItem = CHANGE_LIST.map((elem) => {
+        return createElement(
             'span',
             elem.isActive
                 ? 'change__title'
@@ -61,7 +61,7 @@ const joinCommunity = () => {
     const button = createElement('button', 'button submit__button', MAIN_INFO.button)
 
     main.append(change, mainContent);
-    change.append(changeItem);
+    change.append(...changeItem);
     mainContent.append(img, infoBlock, button)
 
     infoBlock.append(infoTitle, info)
